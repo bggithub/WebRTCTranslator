@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style type="text/css">
+        .userVideo {
+            height: 200px;
+            width: 200px;
+            float: left;
+            position: absolute; 
+            bottom: 0;
+            right: 0;
+        }
+        .btnClass {
+            float: left;
+            position: absolute; 
+            bottom: 0;
+            center: 0;
+        }
+        .peerVideo {
+            height: 100%;
+            width: 100%;
+        }
+        .video-container {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        .Center{
+            position: relative;
+            top: 0; left: 0; bottom: 100; right: 0;
+        }
+        .btn-bot{
+            position: absolute;
+            bottom: 50;
+        }
+.imageDiv
+       {
+          margin-left: 100px;
+           background: #fff;
+           display: block;
+           width: 500px;
+           height: 500px;
+           padding: 10px;
+           border-radius: 2px 2px 2px 2px;
+           -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+           -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       }
+
+.bottomDiv{
+  margin-left: 110px;
+  font-weight: 100;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  position:relative;
+  border-radius: 2px 2px 2px 2px;
+  bottom:150px;
+  left:0px;
+  color: #fff;
+   width: 500px;
+   height: 50px;
+ background-color : transparent;
+}
+.center {
+  background-color: red;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+        </style>
+<div>
+<div class="imageDiv">
+<video id="video-local" width="500" height="500" autoplay></video>
+</div>
+<div id="voicetext" class="bottomDiv"></div>
+<div>
+<div class="bottomDiv">
+<input type="button" value="Start" onclick="start()" id="startBtn" />
+<input type="button" value="Stop" onclick="stop()" id="stopBtn" />
+<input type="text"  id="textvoice">
+<input type="button" value="Speak" onclick="speak()" id="speak" />
+</div>  
+</div>
+</div>
+<script src="../js/combine.js">
+</script>
+</body>
+</html>
